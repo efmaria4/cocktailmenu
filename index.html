@@ -10,7 +10,7 @@
 
 <div id="main-header"></div>
 <script>
-  fetch("../header.html")
+  fetch("/cocktailmenu/header.html")
     .then(response => response.text())
     .then(data => {
       document.getElementById("main-header").innerHTML = data;

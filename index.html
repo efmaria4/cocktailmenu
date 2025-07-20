@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cocktail Corner</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="icon.png" />
+</head>
+
+<div id="main-header"></div>
+<script>
+  fetch("../header.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("main-header").innerHTML = data;
+    });
+</script>
+<body>
+  <main class="cocktail-list">
+    <h2 class="section-title animate-in" >Cocktails</h2>
+    <div class="cocktail animate-in" onclick="location.href='recipes/mojito.html'">
+      <img src="Cocktail Images/Mojito.png" alt="Mojito">
+      <div class="info">
+        <h2>Mojito</h2>
+        <p>rum, mint, lime, sugar, soda</p>
+        <!-- <span>€9</span> -->
+      </div>
+    </div>
+
+    <div class="cocktail animate-in" onclick="location.href='recipes/margarita.html'">
+      <img src="Cocktail Images/Margarita.png" alt="Margarita">
+      <div class="info">
+        <h2>Margarita</h2>
+        <p>tequila, triple sec, lime</p>
+        <!-- <span>€10</span> -->
+      </div>
+    </div>
+
+        <div class="cocktail animate-in"  onclick="location.href='recipes/moscow mule.html'">
+      <img src="Cocktail Images/Moscow Mule.png" alt="Moscow Mule">
+      <div class="info">
+        <h2>Moscow Mule</h2>
+        <p>vodka, ginger beer, lime</p>
+        <!-- <span>€9</span> -->
+      </div>
+    </div>
+
+    <div class="cocktail animate-in" onclick="location.href='recipes/whisky sour.html'">
+      <img src="Cocktail Images/Whisky Sour.png" alt="Whisky Sour">
+      <div class="info">
+        <h2>Whisky Sour</h2>
+        <p>whisky, lemon, sugar syrup</p>
+        <!-- <span>€9</span> -->
+      </div>
+    </div>
+
+    <div class="cocktail animate-in" onclick="location.href='recipes/old fashioned.html'">
+      <img src="Cocktail Images/Old Fashioned.png" alt="Old Fashioned">
+      <div class="info">
+        <h2>Old Fashioned</h2>
+        <p>bourbon, bitters, sugar, orange</p>
+        <!-- <span>€10</span> -->
+      </div>
+    </div>
+
+    <div class="cocktail animate-in" onclick="location.href='recipes/cuba libre.html'">
+      <img src="Cocktail Images/Cuba Libre.png" alt="Cuba Libre">
+      <div class="info">
+        <h2>Cuba Libre</h2>
+        <p>rum, Coca-Cola, lime</p>
+        <!-- <span>€8</span> -->
+      </div>
+    </div>
+
+    <div class="cocktail animate-in" onclick="location.href='recipes/daiquiri.html'">
+      <img src="Cocktail Images/Daiquiri.png" alt="Daiquiri">
+      <div class="info">
+        <h2>Daiquiri</h2>
+        <p>rum, lime, sugar syrup</p>
+        <!-- <span>€9</span> -->
+      </div>
+    </div>
+
+    <div class="cocktail animate-in" onclick="location.href='recipes/tom collins.html'">
+      <img src="Cocktail Images/Tom Collins.png" alt="Tom Collins">
+      <div class="info">
+        <h2>Tom Collins</h2>
+        <p>gin, lemon, sugar, soda</p>
+        <!-- <span>€9</span> -->
+      </div>
+    </div>
+
+    <div class="cocktail animate-in" onclick="location.href='recipes/margarita.html'">
+      <img src="Cocktail Images/Margarita.png" alt="Margarita">
+      <div class="info">
+        <h2>Margarita</h2>
+        <p>tequila, triple sec, lime juice</p>
+        <!-- <span>€10</span> -->
+      </div>
+    </div>
+
+    <div class="cocktail animate-in" onclick="location.href='recipes/passion fruit margarita.html'">
+      <img src="Cocktail Images/Passion Fruit Margarita.png" alt="Passion Fruit Margarita">
+      <div class="info">
+        <h2>Passion Fruit Margarita</h2>
+        <p>tequila, passion fruit puree, lime, triple sec</p>
+        <!-- <span>€10</span> -->
+      </div>
+    </div>
+
+    <div class="cocktail animate-in" onclick="location.href='recipes/paloma.html'">
+      <img src="Cocktail Images/Paloma.png" alt="Paloma">
+      <div class="info">
+        <h2>Paloma</h2>
+        <p>tequila, grapefruit soda, lime</p>
+        <!-- <span>€9</span> -->
+      </div>
+    </div>
+
+    <div class="cocktail animate-in"  onclick="location.href='recipes/tropical paloma.html'">
+      <img src="Cocktail Images/Tropical Paloma.png" alt="Tropical Paloma">
+      <div class="info">
+        <h2>Tropical Paloma</h2>
+        <p>tequila, tequila tropical, lime, triple sec</p>
+        <!-- <span>€10</span> -->
+      </div>
+    </div>
+
+        <div class="cocktail animate-in"  onclick="location.href='recipes/long island.html'">
+      <img src="Cocktail Images/Long Island.png" alt="Long Island">
+      <div class="info">
+        <h2>Long Island</h2>
+        <p>gin, vodka ,tequila, rum, triple sec, lemon, coca cola</p>
+        <!-- <span>€10</span> -->
+      </div>
+    </div>
+
+    <div class="cocktail animate-in"  onclick="location.href='recipes/porn star.html'">
+      <img src="Cocktail Images/Porn Star.png" alt="Porn Star Martini">
+      <div class="info">
+        <h2>Porn Star Martini</h2>
+        <p>vodka, passion fruit puree, lime, prosecco shot</p>
+        <!-- <span>€11</span> -->
+      </div>
+    </div>
+
+    <div class="cocktail animate-in"  onclick="location.href='recipes/sour apple martini.html'">
+      <img src="Cocktail Images/Sour Apple Martini.png" alt="Sour Apple Martini">
+      <div class="info">
+        <h2>Sour Apple Martini</h2>
+        <p>vodka, sour apple puree, triple sec, lemon</p>
+        <!-- <span>€10</span> -->
+      </div>
+    </div>
+
+    <div class="cocktail animate-in" onclick="location.href='recipes/dark and stormy.html'">
+      <img src="Cocktail Images/Dark and Stormy.png" alt="Dark and Stormy">
+      <div class="info">
+        <h2>Dark & Stormy</h2>
+        <p>dark rum, ginger beer, lime</p>
+        <!-- <span>€9</span> -->
+      </div>
+    </div>
+
+        <div class="cocktail animate-in" onclick="location.href='recipes/cucumber snap.html'">
+      <img src="Cocktail Images/Cucumber Snap.png" alt="Cucumber Snap">
+      <div class="info">
+        <h2>Cucumber Snap</h2>
+        <p>gin, cucumber, lime, tonic</p>
+        <!-- <span>€10</span> -->
+      </div>
+    </div>
+
+
+<h2 class="section-title animate-in">Mocktails</h2>
+    <div class="cocktail animate-in" onclick="location.href='recipes/pink thorn.html'">
+      <img src="Cocktail Images/Pink Thorn.png" alt="Pink Thorn">
+      <div class="info">
+        <h2>Grapefruit Mocktail</h2>
+        <p>grapefruit soda, grapefruit, lime, honey, rosemary</p>
+        <!-- <span>€9</span> -->
+      </div>
+    </div>
+
+    <div class="cocktail animate-in" onclick="location.href='recipes/golden drop.html'">
+      <img src="Cocktail Images/Golden Drop.png" alt="Golden Drop">
+      <div class="info">
+        <h2>Golden Drop</h2>
+        <p>bitters, orange, lemon, honey, sparkling water</p>
+        <!-- <span>€9</span> -->
+      </div>
+    </div>
+
+        <div class="cocktail animate-in" onclick="location.href='recipes/blush breeze.html'">
+      <img src="Cocktail Images/Blush Breeze.png" alt="Blush Breeze">
+      <div class="info">
+        <h2>Blush Breeze</h2>
+        <p>watermelon, mint, lime, soda</p>
+        <!-- <span>€9</span> -->
+      </div>
+    </div>
+
+    <div class="cocktail animate-in"  onclick="location.href='recipes/green whisper.html'">
+      <img src="Cocktail Images/Green Whisper.png" alt="Green Whisper">
+      <div class="info">
+        <h2>Green Whisper</h2>
+        <p>cucumber, lime, mint/basil, honey, soda</p>
+        <!-- <span>€9</span> -->
+    </div>
+    </div>
+
+
+  </main>
+  <script>
+  const animatedElements = document.querySelectorAll('.animate-in');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  animatedElements.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>

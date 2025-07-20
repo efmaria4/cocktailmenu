@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Old Fashioned</title>
+    <link rel="stylesheet" href="recipe.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/png" href="../icon.png" />
+
+  </head>
+  <div id="main-header"></div>
+<script>
+  fetch("../header.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("main-header").innerHTML = data;
+    });
+</script>
+  <body>
+    <div class="container">
+      <a class="back-button" href="../index.html">← Back to menu</a>
+    <h1 class="recipe-title">Cucumber Snap</h1>
+      <img src="../Cocktail Images/Cucumber Snap.png" alt="Cucumber Snap" />
+
+      <div class="section">
+        <h2 class="section-title">Ingredients</h2>
+        <ul>
+          <li>50ml Gin</li>
+          <li>6-8 Slices of Cucumber</li>
+          <li>20ml Lime Juice</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2 class="section-title">Instructions</h2>
+        <ol>
+          <li>Add the cucumber slices to the shaker and muddle them.</li> 
+          <li>Add the gin and the lime to the shaker and shake with ice.</li>
+          <li>Slide a long cucumber ribbon into the glass so it hugs the inside.</li>
+          <li>Add ice.</li>
+          <li>Double strain into a chilled glass.</li>
+        </ol>
+
+        <h2 class="section-title">Details</h2>
+        <ul>
+            <li>Method: Muddling and Shaking</li>       
+            <li>Glassware: Old Fashioned</li>
+            <li>Garnish: Cucumber roll on stick</li>
+        </ul>
+
+
+
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blush Breeze</title>
+    <link rel="stylesheet" href="recipe.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/png" href="../icon.png" />
+
+
+
+  </head>
+  <div id="main-header"></div>
+<script>
+  fetch("../header.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("main-header").innerHTML = data;
+    });
+</script>
+  <body>
+    <div class="container">
+      <a class="back-button" href="../index.html">← Back to menu</a>
+    <h1 class="recipe-title">Blush Breeze</h1>
+      <img src="../Cocktail Images/Blush Breeze.png" alt="Blush Breeze" />
+
+      <div class="section">
+        <h2 class="section-title">Ingredients</h2>
+        <ul>
+          <li>1/2 cup Cubed Fresh Watermelon</li>
+          <li>6-8 Mint Leaves</li>
+          <li>20ml Fresh Lime Juice</li>
+          <li>Soda Water to top up</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2 class="section-title">Instructions</h2>
+        <ol>
+            <li>Muddle the watermelon and the mint leaves in the glass.</li>
+            <li>Add the lime juice and the ice.</li>
+            <li>Fill the glass with soda and stir gently.</li>
+        </ol>
+
+        <h2 class="section-title">Details</h2>
+        <ul>
+            <li>Method: Muddling & Stirring</li>       
+            <li>Glassware: Rocks</li>
+            <li>Garnish: Watermelon Slice</li>
+        </ul>
+
+
+
+      </div>
+    </div>
+  </body>
+</html>

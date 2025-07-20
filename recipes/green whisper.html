@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Green Whisper</title>
+    <link rel="stylesheet" href="recipe.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/png" href="../icon.png" />
+  </head>
+  <div id="main-header"></div>
+  <script>
+    
+  </script>>
+    fetch("../header.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("main-header").innerHTML = data;
+      });
+  </script>
+  <body>
+    <div class="container">
+      <a class="back-button" href="../index.html">← Back to menu</a>
+      <h1 class="recipe-title">Green Whisper</h1>
+      <img src="../Cocktail Images/Green Whisper.png" alt="Green Whisper" />
+
+      <div class="section">
+        <h2 class="section-title">Ingredients</h2>
+        <ul>
+          <li>5 Slices of Cucumber</li>
+          <li>5 Mint/Basil Leaves</li>
+          <li>20ml Fresh Lime Juice</li>
+          <li>2 tsp Honey</li>
+          <li>Soda Water to top up</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2 class="section-title">Instructions</h2>
+        <ol>
+          <li
+            >Muddle the cucumber slices, the honey and the basil/mint in a spare
+            glass.</li
+          >
+          <li>Add the soda and stir.</li>
+          <li>Fill the rocks glass with ice.</li>
+          <li>Strain the mixture into the rocks glass.</li>
+        </ol>
+
+        <h2 class="section-title">Details</h2>
+        <ul>
+          <li>Method: Muddling</li>
+          <li>Glassware: Rocks</li>
+          <li>Garnish: Basil/Mint or/and Cucumber</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

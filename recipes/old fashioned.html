@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Old Fashioned</title>
+    <link rel="stylesheet" href="recipe.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/png" href="../icon.png" />
+
+
+  </head>
+  <div id="main-header"></div>
+<script>
+  fetch("../header.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("main-header").innerHTML = data;
+    });
+</script>
+  <body>
+
+    <div class="container">
+      <a class="back-button" href="../index.html">← Back to menu</a>
+    <h1 class="recipe-title">Old Fashioned</h1>
+      <img src="../Cocktail Images/Old Fashioned.png" alt="Old Fashioned" />
+
+      <div class="section">
+        <h2 class="section-title">Ingredients</h2>
+        <ul>
+          <li>60ml Bourbon/Whiskey</li>
+          <li>4 dashes angostura bitters</li>
+          <li>10ml Sugar Syrup</li>
+          <li>1 Orange Wedge</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2 class="section-title">Instructions</h2>
+        <ol>
+          <li>Add the orange wedge to the glass and muddle it.</li> 
+          <li>Add the sugar syrup and bitters to the glass and stir.</li>
+          <li>Add the bourbon/whiskey to the glass and stir.</li>
+        </ol>
+
+        <h2 class="section-title">Details</h2>
+        <ul>
+            <li>Method: Muddling and Stirring</li>       
+            <li>Glassware: Old Fashioned</li>
+            <li>Garnish: Orange Zest</li>
+        </ul>
+
+
+
+      </div>
+    </div>
+  </body>
+</html>

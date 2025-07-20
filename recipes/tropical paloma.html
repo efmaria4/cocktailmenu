@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Paloma</title>
+    <link rel="stylesheet" href="recipe.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/png" href="../icon.png" />
+  </head>
+  <div id="main-header"></div>
+  <script>
+    fetch("../header.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("main-header").innerHTML = data;
+      });
+  </script>
+  <body>
+    <div class="container">
+      <a class="back-button" href="../index.html">← Back to menu</a>
+      <h1 class="recipe-title">Paloma</h1>
+      <img src="../Cocktail Images/Paloma.png" alt="Paloma" />
+
+      <div class="section">
+        <h2 class="section-title">Ingredients</h2>
+        <ul>
+          <li>40ml Tequila Blanco</li>
+          <li>20ml Tequila Tropical</li>
+          <li>20ml Fresh Lime Juice</li>
+          <li>Grapefruit Soda to top up</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2 class="section-title">Instructions</h2>
+        <ol>
+          <li>Rim the glass with lime and dip into salt or sugar.</li>
+          <li>Add the tequilas and the lime juice to the glass.</li>
+          <li>Fill the glass with ice and add stir.</li>
+          <li>Add ice and grapefruit soda and stir gently</li>
+          <li>Add more ice and garnish</li>
+        </ol>
+
+        <h2 class="section-title">Details</h2>
+        <ul>
+          <li>Method: Building</li>
+          <li>Glassware: Collins</li>
+          <li>Garnish: Grapefruit slice or Passion Fruit</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

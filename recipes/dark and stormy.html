@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dark and Stormy</title>
+    <link rel="stylesheet" href="recipe.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/png" href="../icon.png" />
+  </head>
+  <div id="main-header"></div>
+  <script>
+    fetch("../header.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("main-header").innerHTML = data;
+      });
+  </script>
+  <body>
+    <div class="container">
+      <a class="back-button" href="../index.html">← Back to menu</a>
+      <h1 class="recipe-title">Dark and Stormy</h1>
+      <img src="../Cocktail Images/Dark and Stormy.png" alt="Dark and Stormy" />
+
+      <div class="section">
+        <h2 class="section-title">Ingredients</h2>
+        <ul>
+          <li>40ml Dark Rum</li>
+          <li>20ml Fresh Lime Juice</li>
+          <li>Ginger Beer to top up</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2 class="section-title">Instructions</h2>
+        <ol>
+          <li>Fill a highball glass with ice.</li>
+          <li> Pour in the dark rum and lime juice.</li>
+          <li> Top up with ginger beer.</li>
+        </ol>
+
+        <h2 class="section-title">Details</h2>
+        <ul>
+          <li>Method: Building</li>
+          <li>Glassware: Highball</li>
+          <li>Garnish: Lime Wedge</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

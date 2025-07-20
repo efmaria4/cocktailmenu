@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Long Island</title>
+    <link rel="stylesheet" href="recipe.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/png" href="../icon.png" />
+  </head>>
+  <div id="main-header"></div>
+  <script>
+    fetch("../header.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("main-header").innerHTML = data;
+      });
+  </script>
+  <body>
+    <div class="container">
+      <a class="back-button" href="../index.html">← Back to menu</a>
+      <h1 class="recipe-title">Long Island</h1>
+      <img src="../Cocktail Images/Long Island.png" alt="Long Island" />
+
+      <div class="section">
+        <h2 class="section-title">Ingredients</h2>
+        <ul>
+          <li>15ml Gin</li>
+          <li>15ml Vodka</li>
+          <li>15ml Tequila Blanco</li>
+          <li>15ml Rum</li>
+          <li>15ml Triple Sec</li>
+          <li>15ml Fresh Lemon Juice</li>
+          <li>Coca-Cola to top up</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2 class="section-title">Instructions</h2>
+        <ol>
+          <li>Add the ingredients one by one into a glass with ice.</li>
+          <li>Top up with Coca-Cola.</li>
+        </ol>
+
+        <h2 class="section-title">Details</h2>
+        <ul>
+          <li>Method: Building</li>
+          <li>Glassware: Double Old Fashioned</li>
+          <li>Garnish: Lemon Wedge</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

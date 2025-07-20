@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pink Thorn</title>
+    <link rel="stylesheet" href="recipe.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/png" href="../icon.png" />
+  </head>
+  <div id="main-header"></div>
+  <script>
+    fetch("../header.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("main-header").innerHTML = data;
+      });
+  </script>
+  <body>
+    <div class="container">
+      <a class="back-button" href="../index.html">← Back to menu</a>
+      <h1 class="recipe-title">Pink Thorn</h1>
+      <img src="../Cocktail Images/Pink Thorn.png" alt="Pink Thorn" />
+
+      <div class="section">
+        <h2 class="section-title">Ingredients</h2>
+        <ul>
+          <li>80ml Grapefruit Soda</li>
+          <li>40ml Grapefruit Juice</li>
+          <li>20ml Fresh Lime Juice</li>
+          <li>1 tsp Honey</li>
+          <li>1 sprig Rosemary</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2 class="section-title">Instructions</h2>
+        <ol>
+          <li
+            >Add the grapefruit juice, the lime juice and the honey to the
+            shaker and shake.</li
+          >
+          <li>Add an ice cube and shake for 10-15 seconds.</li>
+          <li>Strain the mixture into a glass with ice.</li>
+          <li>Top with grapefruit soda.</li>
+        </ol>
+
+        <h2 class="section-title">Details</h2>
+        <ul>
+          <li>Method: Shaking & Building</li>
+          <li>Glassware: Rocks</li>
+          <li>Garnish: Grapefruit slice and sprig of rosemary</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

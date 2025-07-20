@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Whisky Sour</title>
+    <link rel="stylesheet" href="recipe.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/png" href="../icon.png" />
+  </head>
+  <div id="main-header"></div>
+  <script>
+    fetch("../header.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("main-header").innerHTML = data;
+      });
+  </script>
+  <body>
+    <div class="container">
+      <a class="back-button" href="../index.html">← Back to menu</a>
+      <h1 class="recipe-title">Whisky Sour</h1>
+      <img src="../Cocktail Images/Whisky Sour.png" alt="Whisky Sour" />
+
+      <div class="section">
+        <h2 class="section-title">Ingredients</h2>
+        <ul>
+          <li>50ml Bourbon/Whisky</li>
+          <li>30ml Fresh Lemon Juice</li>
+          <li>15ml Sugar Syrup</li>
+          <li>3 Dashes Fee Foam/15-20ml Methyl/1tbsp Egg White</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2 class="section-title">Instructions</h2>
+        <ol>
+          <li>Add all the ingredients to the shaker (without adding ice).</li>
+          <li>Dry shake for 10-15 seconds.</li>
+          <li>Add ice to the shaker and shake for another 10-15 seconds.</li>
+          <li>Double strain into a chilled glass.</li>
+        </ol>
+
+        <h2 class="section-title">Details</h2>
+        <ul>
+          <li>Method: Dry Skaking & Shaking</li>
+          <li>Glassware: Rocks</li>
+          <li>Garnish: Lemon Zest</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
